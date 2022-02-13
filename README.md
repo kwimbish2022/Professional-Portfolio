@@ -1,7 +1,7 @@
 # Professional-Portfolio
 
 ## Purpose
-My Professional Portfolio. Public and open for review to all recruiters/future employers. 
+My Professional Portfolio. Public and open for review to all. 
 
 ## Built with
 * HTML
