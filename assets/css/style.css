@@ -79,15 +79,26 @@ header nav ul li a {
 
 /* HERO STYLES BEGIN*/
 
-.hero {
-    background-image: url('../images/hero-bg.jpg');
+.hero-image1 {
+    background-image: url('.../images/AI5.jpg');
     background-size: cover;
-    background-position: 80%;
+    background-position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-attachment: fixed;
 }
+
+.hero-self-img {
+    position: relative;
+    right: 150px;
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+  }
 
 .hero::after {
     content: "Junior Web Developer";
@@ -101,3 +112,11 @@ header nav ul li a {
     font-weight: bold;
     line-height: 1.2;
 }
+
+.footer {
+    background: var(--tertiary-color);
+  }
+  
+  .footer h1 {
+    color: var(--secondary-color);
+  }
