@@ -1,43 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Kathryn Wimbish, Junior Developer</title>
-    </head>
 
-    <body>
-        <!-- navigation tags - block level element -->
-        <header>
-          <h1>
-            <a href="/">Kathryn Wimbish</a>
-          </h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="#about-me">About Me</a>
-              </li>
-              <li>
-                <a href="#work">Work</a>
-              </li>
-              <li>
-                <a href="#Contact Me">Contact Me</a>
-              </li>
-              <li>
-                <a href="#resume">Resume</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <!-- end navigation -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kathryn Wimbish, Junior Developer</title>
+  </head>
 
-        <!-- hero/jumbotron -->
-        <section class="hero">
-            <div class="hero-cta">
-                <h2>Web Developer and Data Dork</h2>
-                    <div class="self-img">
-                        <img src=""
-            </div>
-        </section>
-        <!-- end header -->
+  <body>
+    <!-- navigation tags - block level element -->
+    <header>  
+      <h1>
+        <a>Kathryn Wimbish</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end header and navigation -->
+
+    <!-- hero/jumbotron -->
+    <section class="hero">
+      <img class="img" src="./assets/images/selfpic.png" />
+    </section>
+    <!-- end hero -->
+
+    <!-- section -->
+    <container id="all" class="content">
+      <section id="about-me">
+        <h2>About<br>Me</h2>
+          <p>
+            A Web Developer with experience in Full Stack Technologies such as JavaScript, HTML, CSS, Node, React, and more. In a previous career, I was an experienced Human Resources Manager who specialized in transformative leadership and organizational change. I helped multiple companies through process/operational/cultural improvements as well as numerous system implementations. It was this experience (and my ever present desire to know how/why things work) that kindled my passion for web development.
+          </p>
+      </section>
+
+      <section id="work">
+        <h2>Work</h2>
+    
+        <div class="card" id="card1">
+          <img class= "card-img" src= "./assets/images/Run-Buddy-Screenshot.png" alt="run-buddy" />
+            <h3><a href="https://kwimbish2022.github.io/Run-Buddy/">Run Buddy, HTML/CSS</a></h3>
+        </div>
+
+        <div class="card">
+          <img class= "card-img" src="./assets/images/horiseon.png" alt="horiseon-services" />
+            <h3><a href="https://kwimbish2022.github.io/KW-Week-1-Challenge-Horiseon/">Horiseon, HTML/CSS</a></h3>
+        </div>
+
+        <div class="card">
+          <img class= "card-img" src="./assets/images/comingsoon.jpg" alt="coming-soon-1" />
+            <h3>Coming Soon, JavaScript/React</h3>
+        </div>
+
+        <div class="card">
+          <img class= "card-img" src="./assets/images/comingsoon.jpg" alt="coming-soon-2" />
+            <h3>Coming Soon, Node/IoT</h3>
+        </div>
+
+        <div class="card">
+          <img class= "card-img" src="./assets/images/comingsoon.jpg" alt="coming-soon-3" />
+            <h3>Coming Soon, MERN Stack</h3>
+        </div>
+      </section>
+    </container>
+
+      <!-- end work section -->
+
+  <footer id="contact-me">
+    <h2>
+      <a>Contact<br>Me</a>
+    </h2>
+    <div>
+      <ul>
+        <li>
+          <a>636.288.3593</a>
+        </li>
+        <li>
+          <a>kwimbish@hotmail.com</a>
+        </li>
+        <li>
+          <a href="https://github.com/kwimbish2022">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kathryn-wimbish-ma-phr-shrm-cp-31394632?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzZ%2F%2FvDX1STiGHWrKO%2F4Hug%3D%3D">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    <!-- end footer section -->
+
+  </body>
+</html>
+    

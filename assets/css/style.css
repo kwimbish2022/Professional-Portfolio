@@ -15,7 +15,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     }
 
-/* HEADER / NAV BAR STYLES START */
+/* header / nav bar styles start */
 
 header {
     padding: 20px 35px;
@@ -73,50 +73,278 @@ header nav ul li a {
     font-size: 1.75vw;
     text-decoration: var(--secondary-color);
     background-color: var(--tertiary-color)
-}
-  
-/* HEADER / NAVBAR STYLES END */
+}  
+/* header / navbar styles end */
 
-/* HERO STYLES BEGIN*/
-
-.hero-image1 {
-    background-image: url('.../images/AI5.jpg');
+/* hero styles start */
+.hero {
+    background-image: url('../images/smoke.png');
     background-size: cover;
-    background-position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-attachment: fixed;
+    position: relative;
+    height: 550px;
 }
 
-.hero-self-img {
+.hero img {
+    position: absolute;  
+    left: 50px;
+    z-index: 5;
+}
+
+/* hero styles end */
+
+/* content styles start */
+.content {
     position: relative;
-    right: 150px;
-    width: 35%;
+    background: rgba(126, 187, 206, 0.45);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 0 auto;
+    padding: 0px;
+}
+
+#about-me {
+    width: 100%;
+    text-align: left;
+    border: 0px auto;
+    display: flex;
+    margin: 1.50%;
+    color: var(--tertiary-color);
+    font-size: 24px;
+    opacity: 100%;
+    line-height:1.5;
+}
+
+#about-me h2 {
+    font-size: 36px;
+    text-align: left;
+    border-right: 3px solid var(--tertiary-color);
+    margin: 1.50%;
+}
+
+#about-me p {
+    width: 100%;
+    text-align: left;
+    margin: 1.5%;
+    color: var(--tertiary-color);
+    font-size: 24px;
+    opacity: 100%;
+    line-height:1.5;
+}
+
+/* about me styles end */
+
+/* work styles start */
+#work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#work h2 {
+    font-size: 36px;
+    text-align: left;
+    border-right: 3px solid var(--tertiary-color);
+    margin: 1.50%;
+}
+
+.card {
+    flex-basis: auto;
+    align-self: auto;
+    height: 325px;
+    width: 325px;
+    margin: 20px;
+    border: 10px solid var(--secondary-color);
+}
+
+#card1 {
+    width: 1500px;
+    height: auto;
+}
+
+.card-img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-style: bold;
+    color: var(--tertiary-color);
+}
+
+/* end card section */
+
+/* start footer contact section */
+
+#contact-me {
+    position: relative;
+    background: rgba(126, 187, 206, 0.45);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 0 auto;
+    padding: 0px;
+    padding: 20px 35px;
+    justify-content: space-between;
+    top: 0;
+    text-align: left;
+}
+
+#contact-me h2 {
+    font-weight: bold;
     text-align: right;
-    margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.3;
+    margin: 5px;
+    font-size: 36px;
+    border-width: 3px;
+    border-right: 3px solid var(--tertiary-color);
+}
+
+#contact-me h2 a {
+    width: 15px;
+    padding: 15px;
+    color: var(--tertiary-color);
+    margin: 15px 15px 15px 0px;
+}
+  
+#contact-me a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+  
+#contact-me div {
+    margin: 7px 0;
+    text-decoration: underline;
+}
+  
+#contact-me div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+}
+  
+#contact-me div ul li a {
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 1.75vw;
+    text-decoration: var(--tertiary-color);
+}
+/* footer contact me styles end */
+
+/* media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+  
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero {
+      width: 100%;
+    }
+  
+    .hero {
+      text-align: center;
+    }
+  
+    .about-me {
+      width: 80%;
+    }
+  
+    .work {
+      flex: 0 70%;
+    }
+  
+    .footer {
+      flex: 1 70%;
+    }
   }
 
-.hero::after {
-    content: "Junior Web Developer";
-    position: absolute;
-    top: 500px;
-    right: 15px;
-    text-align: right;
-    margin: 3.5%;
-    color: var(--secondary-color);
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.footer {
-    background: var(--tertiary-color);
+  
+  /* media query for tablets and smaller */
+  @media screen and (max-width: 768) {
+    
+    content {
+      padding: 30px 15px;
+    }
+  
+    .work h2 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .card {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .card-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
   
-  .footer h1 {
-    color: var(--secondary-color);
+  /* media query for mobile phones and smaller */
+  @media screen and (max-width: 575px) {
+    
+    .hero {
+      width: 100%;
+    }
+  
+    .content {
+      width: 95%;
+    }
+  
+    .about-me {
+      width: 100%;
+    }
+  
+    .card {
+      flex: 0 100%;
+    }
+  
+    .footer {
+      text-align: center;
+    }
+  
+    .footer > * {
+      flex: 0 100%;
+    }
   }
+  
